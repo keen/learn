@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard Starter UI, by Keen IO</title>
-  <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../lib/keen-dashboards.css">
+  <title>Event Data Class with Keen IO</title>
+  <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./lib/keen-dashboards.css">
 </head>
 <body class="application">
 
@@ -16,7 +16,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="./index.html">Dashboard Starter UI</a>
+        <a class="navbar-brand" href="./index.html">Event Data Class</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
@@ -30,30 +30,16 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-12">
-
-        <div class="chart-wrapper">
-          <div class="chart-title">
-            Chart Wrapper Title
-          </div>
-          <div class="chart-stage">
-            <div id="example-chart"></div>
-          </div>
-          <div class="chart-notes">
-            This is a sample text region to describe this chart.
-          </div>
-        </div>
-
+      <div class="col-sm-3 col-sm-offset-2">
+        <h1 class="text-center" style="margin: 200px 0"><a class="btn btn-lg btn-default btn-block" href="./record">Record Events!</a></h1>
+      </div>
+      <div class="col-sm-3 col-sm-offset-1">
+        <h1 class="text-center" style="margin: 200px 0"><a class="btn btn-lg btn-default btn-block" href="./dashboard">Build a Dashboard!</a></h1>
       </div>
     </div>
     <hr>
     <p class="small text-muted">Built with &#9829; by <a href="https://keen.io">Keen IO</a></p>
   </div>
 
-  <script src="../lib/jquery/dist/jquery.min.js"></script>
-  <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <script src="../lib/keen.js"></script>
-  <script src="keen-dashboard.js"></script>
 </body>
 </html>
