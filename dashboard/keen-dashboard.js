@@ -16,7 +16,7 @@ Keen.ready(function(){
   });
 
   // ----------------------------------------
-  // Visualize the query result
+  // Run the query and draw the result
   // ----------------------------------------
   var el = document.getElementById("example-chart");
 
