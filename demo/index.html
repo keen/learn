@@ -145,17 +145,8 @@
         }
       })
       .height(400)
-      // .title("Clicks per person")
       .prepare();
 
-
-    // simple spinner
-    // var spinner = Keen.Spinner().spin(document.getElementById("demo-spinner"))
-    // var spinner = new Keen.Dataviz()
-    //   .el(document.getElementById("demo-spinner"))
-    //   .height(20)
-    //   .width(20)
-    //   .prepare();
 
     var request = client.run(query, function(err, res){
       if (err) {
@@ -174,11 +165,11 @@
             }
           });
       }
+      setTimeout(function(){
+        console.log("Refreshing query");
+        request.refresh();
+      }, 1000 * 4);
     });
-    setInterval(function(){
-      console.log("Refreshing query");
-      request.refresh();
-    }, 5000);
 
   });
   </script>
