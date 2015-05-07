@@ -13,6 +13,9 @@ Keen.ready(function(){
   // ----------------------------------------
   var query = new Keen.Query("count", {
     eventCollection: "clicks"
+    // groupBy: "name",
+    // timeframe: "this_15_minutes",
+    // interval: "minutely"
   });
 
   // ----------------------------------------
@@ -20,9 +23,10 @@ Keen.ready(function(){
   // ----------------------------------------
   var el = document.getElementById("example-chart");
 
-  var chart = client.draw(query, el, {
-    height: 140,
-    title: "Total Clicks",
+  client.draw(query, el, {
+    // height: 400,
+    // sortGroups: "desc",
+    title: "Total Clicks"
   });
 
 });

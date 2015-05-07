@@ -12,19 +12,26 @@ $(function() {
 
   var data = {
     // define event properties here
-    name: "Guest"
-    // product: {
-    //   name: "My Cool Product",
-    //   id: "s3984023d984092dfs384092fds384092348",
-    //   price: 25,
-    //   on_sale: false
-    // }
+    name: "Guest",
+    product: {
+      name: "My Cool Product",
+      id: "s3984023d984ds384092348",
+      price: 125,
+      on_sale: true
+    },
+    store: {
+      id: "23423446235623567875",
+      name: "Ted's Bargain Outlet",
+      city: "San Francisco",
+      zip_code: 94103
+    }
   };
 
   button.onclick = function(e) {
-    console.log(data);
+    console.log("Data to send: ", data);
     client.addEvent("clicks", data, function(err, res){
-      console.log(res);
+      console.log("API error: ", err);
+      console.log("API response: ", res);
     });
   }
 
