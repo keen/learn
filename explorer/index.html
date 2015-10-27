@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce Shop | Keen IO</title>
+  <link href="https://d1kk3lo5kv9rxi.cloudfront.net/css/font/gotham/woff/a.css?v=1175" rel="stylesheet" type="text/css">
+  <link href="https://d1kk3lo5kv9rxi.cloudfront.net/css/font/gotham/woff/b.css?v=1175" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="keen-explorer.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://d26b395fwzu5fz.cloudfront.net/3.2.7/keen.min.js" type="text/javascript"></script>
+  <script src="keen-explorer.min.js"></script>
+  <style>
+    #explorer {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="explorer"></div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var client, app;
+
+      client = new Keen({
+        projectId: "5557fe1c2fd4b1326f14444e",
+        readKey: "d6cc507cf72af7dd0746b630edc51179355e2c074ab46d4545d3bfcecb02dabcbc46a78b8df5dd4b4b6ba2a7dff8fd5b3e3adbdf05cfeb42538205d2b528a357b0ab010e8c7efab939a01bce5be678a5dc3a7fa949db33cbee815a00dca93848d0b96908269a8be2bf70e40a9e213fb0",
+        masterKey: "d6cc507cf72af7dd0746b630edc51179355e2c074ab46d4545d3bfcecb02dabcbc46a78b8df5dd4b4b6ba2a7dff8fd5b3e3adbdf05cfeb42538205d2b528a357b0ab010e8c7efab939a01bce5be678a5dc3a7fa949db33cbee815a00dca93848d0b96908269a8be2bf70e40a9e213fb0",
+      });
+
+      app = new Keen.Explorer.App({
+        client: client,
+        // Optionally add in persistance
+        // persistence: persistence,
+        targetId: 'explorer'
+      });
+
+      app.render();
+    });
+  </script>
+</body>
+</html>
